@@ -5,7 +5,7 @@
         "label": "__app__",
         "about": "Rreth __app__",
         "checkForUpdates": "Kërko për përditësime...",
-        "checkForNodeUpdates": "Kërko për përditësime të nyjes Ethereum...",
+        "checkForNodeUpdates": "Kërko për përditësime të nyjes Sagecity...",
         "services": "Shërbime",
         "hide": "Fshih __app__",
         "hideOthers": "Fshih të tjerat",
@@ -44,7 +44,7 @@
         "runTests": "Fillo testimet",
         "logFiles": "Trego skedarin me të dhënat e regjistruara",
         "openRemix": "Hap IDE-në Remix",
-        "ethereumNode": "Nyje Ethereum",
+        "ethereumNode": "Nyje Sagecity",
         "network": "Rrjet",
         "mainNetwork": "Rrjeti kryesor",
         "startMining": "⛏  Fillo të Prodhosh",
@@ -71,7 +71,7 @@
       "timeSync": {
         "title": "Ora e kompjuterit tuaj nuk është e sinkronizuar.",
         "description":
-          "Në mënyrë që të sinkronizoheni me sukses me rrjetin Ethereum ju duhet të sinkronizoni orën tuaj të kompjuterit me një server sinkronizues kohe.",
+          "Në mënyrë që të sinkronizoheni me sukses me rrjetin Sagecity ju duhet të sinkronizoni orën tuaj të kompjuterit me një server sinkronizues kohe.",
         "win32":
           "Shkoni në \"Internet Time Settings\" te preferencat tuaja të sistemit dhe përzgjidhni opsionin përkatës. Për detaje shikoni këtë udhëzues: http://www.guidingtech.com/3119/windows-clock-sync/",
         "linux":
@@ -87,7 +87,7 @@
       "legacyChain": {
         "title": "U zbulua zinxhir i vjetër",
         "description":
-          "Nyja juaj ndodhet në zinxhirin e pasuportuar Ethereum Classic. Për të përdorur këtë zinxhir, përdorni mjetet e mundësuara nga projekti Ethereum Classic në\nhttps://ethereumclassic.github.io.\n\nPër të kaluar në zinxhirin kryesor Ethereum ndiqni udhëzuesin këtu:\nhttps://github.com/ethereum/mist/releases/0.8.2"
+          "Nyja juaj ndodhet në zinxhirin e pasuportuar Sagecity Classic. Për të përdorur këtë zinxhir, përdorni mjetet e mundësuara nga projekti Ethereum Classic në\nhttps://ethereumclassic.github.io.\n\nPër të kaluar në zinxhirin kryesor Ethereum ndiqni udhëzuesin këtu:\nhttps://github.com/ethereum/mist/releases/0.8.2"
       }
     },
     "rightClick": {
@@ -131,7 +131,7 @@
       "privateNetwork": "Private-net",
       "test": "test",
       "testnetExplain":
-        "Jeni në një rrjet testimi, MOS DËRGONI asnjë ether të vërtetë në këto adresa",
+        "Jeni në një rrjet testimi, MOS DËRGONI asnjë sage të vërtetë në këto adresa",
       "timeSinceBlock": "Koha e kaluar që nga blloku i fundit"
     },
     "sidebar": {
@@ -150,21 +150,21 @@
       }
     },
     "startScreen": {
-      "runningNodeFound": "U gjet nyje Ethereum në punë!",
+      "runningNodeFound": "U gjet nyje Sagecity në punë!",
       "nodeConnectionTimeout":
-        "Nuk mund të niset nyje Ethereum!<br><small>Nëse ju <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>instaluat Geth</a>, përdorni këtë komandë ta krijoni: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> Ose raportoni një problem </a></small>",
+        "Nuk mund të niset nyje Sagecity!<br><small>Nëse ju <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>instaluat Geth</a>, përdorni këtë komandë ta krijoni: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> Ose raportoni një problem </a></small>",
       "nodeBinaryNotFound":
-        "Nuk u gjet nyje binare Ethereum!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Ju lutemi krijoni një manualisht më parë. </a> </small>",
-      "nodeStarting": "Nyja Ethereum po niset...",
-      "nodeStarted": "Nyja Ethereum u nis",
-      "nodeConnected": "Nyja Ethereum u lidh",
-      "nodeStopping": "Nyja Ethereum po ndalon...",
-      "nodeStopped": "Nyja Ethereum ndaloi",
-      "nodeError": "Problem lidhjeje i nyjes Ethereum:'(",
+        "Nuk u gjet nyje binare Sagecity!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Ju lutemi krijoni një manualisht më parë. </a> </small>",
+      "nodeStarting": "Nyja Sagecity po niset...",
+      "nodeStarted": "Nyja Sagecity u nis",
+      "nodeConnected": "Nyja Sagecity u lidh",
+      "nodeStopping": "Nyja Sagecity po ndalon...",
+      "nodeStopped": "Nyja Sagecity ndaloi",
+      "nodeError": "Problem lidhjeje i nyjes Sagecity:'(",
       "unableToBindPort":
-        "Nyja Ethereum nuk munt të fillojë. Mos ka ndonjë instancë tjetër të nisur?",
+        "Nyja Sagecity nuk munt të fillojë. Mos ka ndonjë instancë tjetër të nisur?",
       "nodeSyncing":
-        "Nyja Ethereum ka nevojë të sinkronizohet, ju lutemi prisni...",
+        "Nyja Sagecity ka nevojë të sinkronizohet, ju lutemi prisni...",
       "nodeSyncInfo":
         "Duke marrë bllokun __displayBlock__ nga __highestBlock__.",
       "nodeSyncInfoStates":
@@ -177,7 +177,7 @@
         "downloading": "Duke shkarkuar nyje të re...",
         "loadConfig": "Duke ngarkuar konfigurimin e klientit...",
         "filtering": "Duke filtruar skedarët binarë të klientit...",
-        "done": "Nyja Ethereum e përditësuar...",
+        "done": "Nyja Sagecity e përditësuar...",
         "error": "Problem me ekzekutimin e programit të shkarkuar."
       }
     },
@@ -209,7 +209,7 @@
       "importAccount": {
         "doYouHaveAWalletFile": "A keni një skedë kulete?",
         "walletFileDescription":
-          "<p>Nëse ju keni marrë pjesë në Parashitjen e Ethereumit 2014, ju duhet të keni një skedë të emëruar <code>ethereum_wallet_backup.json</code>. Eshtë shkarkuar pas shitjes dhe dërguar në emailin tuaj</p>",
+          "<p>Nëse ju keni marrë pjesë në Parashitjen e Sageumit 2014, ju duhet të keni një skedë të emëruar <code>ethereum_wallet_backup.json</code>. Eshtë shkarkuar pas shitjes dhe dërguar në emailin tuaj</p>",
         "dropFilesHere": "Vendos skedën e parashitjes",
         "importing": "Duke marrë...",
         "buttons": {

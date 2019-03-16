@@ -89,7 +89,7 @@ Template['elements_compileContract'].onCreated(function() {
       );
     } else {
       // Bytecode Data
-      if (!selectedToken || selectedToken === 'ether') {
+      if (!selectedToken || selectedToken === 'sage') {
         // send ether
         txData = TemplateVar.get('show') ? textareaData : '';
       }
@@ -268,7 +268,7 @@ Template['elements_compileContract'].helpers({
 Template['elements_compileContract'].events({
   /**
     Show the extra data field
-    
+
     @event click button.show-data
     */
   'click button.show-data': function(e) {
@@ -277,7 +277,7 @@ Template['elements_compileContract'].events({
   },
   /**
     Show the extra data field
-    
+
     @event click button.hide-data
     */
   'click button.hide-data': function(e, template) {
@@ -289,7 +289,7 @@ Template['elements_compileContract'].events({
   },
   /**
     Textfield switcher
-    
+
     @event click .dapp-segmented-control input
     */
   'click .dapp-segmented-control input': function(e, template) {
@@ -297,7 +297,7 @@ Template['elements_compileContract'].events({
   },
   /**
     Selected a contract function
-    
+
     @event 'change .contract-functions
     */
   'change .compiled-contracts': function(e, template) {
@@ -328,7 +328,7 @@ Template['elements_compileContract'].events({
   },
   /**
     Compile the solidty code, when
-    
+
     @event change abi-input, input .abi-input
     */
   'change .abi-input, input .abi-input': function(e, template) {

@@ -37,7 +37,7 @@
                 }
             },
             "error": {
-                "wrongChain": "Кажется вы не в той цепочке, перезапустите Ethereum Wallet App!"
+                "wrongChain": "Кажется вы не в той цепочке, перезапустите Sagecity Wallet App!"
             },
             "warnings": {
                 "txOriginVulnerabilityWallet": "Этот умный контракт кошелек имеет устаревший код и подлежит фишинга.",
@@ -92,7 +92,7 @@
             "buttons": {
                 "deposit": "Пополнить Эфиром",
                 "buyEther": "Пополнить используя Биткоин",
-                "viewOnExplorer": "View on Etherscan",
+                "viewOnExplorer": "View on sagexplorer",
                 "copyAddress": "Копировать адрес",
                 "scanQRCode": "Показать QR-Код",
                 "showInterface": "Показать Интерфейс"

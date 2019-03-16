@@ -93,7 +93,7 @@
             "buttons": {
                 "deposit": "Ether hinterlegen",
                 "buyEther": "Kaufe Ether",
-                "viewOnExplorer": "View on Etherscan",
+                "viewOnExplorer": "View on sagexplorer",
                 "copyAddress": "Adresse kopieren",
                 "scanQRCode": "QR-Code anzeigen",
                 "showInterface": "Interface anzeigen"

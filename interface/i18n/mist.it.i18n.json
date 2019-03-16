@@ -5,7 +5,7 @@
         "label": "__app__",
         "about": "Info su __app__",
         "checkForUpdates": "Controlla aggiornamenti...",
-        "checkForNodeUpdates": "Controlla aggiornamento dei nodi Ethereum...",
+        "checkForNodeUpdates": "Controlla aggiornamento dei nodi Sagecity...",
         "services": "Servizi",
         "hide": "Nascondi __app__",
         "hideOthers": "Nascondi il resto",
@@ -62,7 +62,7 @@
         "devToolsWebview": "__webview__",
         "runTests": "Esegui Test",
         "logFiles": "Mostra file di log",
-        "ethereumNode": "Nodo Ethereum",
+        "ethereumNode": "Nodo Sagecity",
         "network": "Rete",
         "mainNetwork": "Rete principale",
         "startMining": "⛏ Inizia mining",
@@ -107,7 +107,7 @@
       "legacyChain": {
         "title": "Rilevata chain obsoleta",
         "description":
-          "Il tuo nodo si trova su una chain Ethereum Classic non supportata. Per usare questa chain usa strumenti forniti dal progetto ethereum classic da \nhttps://ethereumclassic.github.io.\n\nPer ritornare sulla chain principale di ethereum segui il tutorial seguente:\nhttps://github.com/ethereum/mist/releases/0.8.2",
+          "Il tuo nodo si trova su una chain Sagecity Classic non supportata. Per usare questa chain usa strumenti forniti dal progetto ethereum classic da \nhttps://ethereumclassic.github.io.\n\nPer ritornare sulla chain principale di ethereum segui il tutorial seguente:\nhttps://github.com/ethereum/mist/releases/0.8.2",
         "swarm": {
           "notEnabled":
             "Swarm non è abilitato. Per abilitare Swarm devi cliccare su Abilita Swarm (menu -> Sviluppo -> Abilita Swarm)."
@@ -154,7 +154,7 @@
       "privateNetwork": "Private-net",
       "test": "test",
       "testnetExplain":
-        "Sei connesso alla testnet, NON INVIARE alcun ether reale a questi indirizzi",
+        "Sei connesso alla testnet, NON INVIARE alcun sage reale a questi indirizzi",
       "timeSinceBlock": "Tempo trascorso dall'ultimo blocco"
     },
     "sidebar": {
@@ -173,23 +173,23 @@
       }
     },
     "startScreen": {
-      "runningNodeFound": "Trovato nodo Ethereum in esecuzione!",
+      "runningNodeFound": "Trovato nodo Sagecity in esecuzione!",
       "nodeConnectionTimeout":
-        "Impossibile avviare un nodo Ethereum!<br><small>Se <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>hai installato Geth</a>, usa questo comando per eseguirlo:<br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> o riporta il problema </a></small>",
+        "Impossibile avviare un nodo Sagecity!<br><small>Se <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>hai installato Geth</a>, usa questo comando per eseguirlo:<br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> o riporta il problema </a></small>",
       "nodeBinaryNotFound":
-        "Impossibile trovare l'eseguibile del nodo Ethereum !<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Per favore avvialo manualmente prima. </a> </small>",
-      "nodeSyncing": "Il nodo Ethereum deve sincronizzarsi, attendere prego...",
+        "Impossibile trovare l'eseguibile del nodo Sagecity !<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Per favore avvialo manualmente prima. </a> </small>",
+      "nodeSyncing": "Il nodo Sagecity deve sincronizzarsi, attendere prego...",
       "nodeSyncInfo":
         "Scaricamento blocco __displayBlock__ di __highestBlock__.",
       "nodeSyncConnecting": "Alla ricerca di nodi...",
-      "nodeStarting": "Nodo Ethereum in avvio...",
-      "nodeStarted": "Nodo Ethereum avviato",
-      "nodeConnected": "Nodo Ethereum connesso",
-      "nodeStopping": "Nodo Ethereum in arresto...",
-      "nodeStopped": "Nodo Ethereum arrestato",
-      "nodeError": "Nodo Ethereum errore di connessione :'(",
+      "nodeStarting": "Nodo Sagecity in avvio...",
+      "nodeStarted": "Nodo Sagecity avviato",
+      "nodeConnected": "Nodo Sagecity connesso",
+      "nodeStopping": "Nodo Sagecity in arresto...",
+      "nodeStopped": "Nodo Sagecity arrestato",
+      "nodeError": "Nodo Sagecity errore di connessione :'(",
       "unableToBindPort":
-        "Nodo Ethereum non in esecuzione. Esiste altra istanza in esecuzione?",
+        "Nodo Sagecity non in esecuzione. Esiste altra istanza in esecuzione?",
       "nodeSyncInfoStates":
         "Scaricamento blocco __displayBlock__ of __highestBlock__, <br> Scaricamento struttura chain __displayState__ of __displayKnownStates__",
       "nodeSyncFoundPeers": "Connessione a __peers__ peers...",
@@ -200,7 +200,7 @@
         "downloading": "Scaricamento nuovo nodo...",
         "loadConfig": "Caricamento configurazione client...",
         "filtering": "Filtro codice binario del client...",
-        "done": "Nodo Ethereum aggiornato...",
+        "done": "Nodo Sagecity aggiornato...",
         "error": "Errore durante lo scaricamento del codice binario."
       }
     },
@@ -230,7 +230,7 @@
       "importAccount": {
         "doYouHaveAWalletFile": "Hai un file per il wallet ?",
         "walletFileDescription":
-          "<p>Se hai partecipato alla pre-vendita Ethereum nel 2014, dovresti avere un file nominato<code>ethereum_wallet_backup.json</code>. È stato scaricato dopo la vendita e inoltre inviato al tuo indirizzo e-mail</p>",
+          "<p>Se hai partecipato alla pre-vendita Sagecity nel 2014, dovresti avere un file nominato<code>ethereum_wallet_backup.json</code>. È stato scaricato dopo la vendita e inoltre inviato al tuo indirizzo e-mail</p>",
         "dropFilesHere": "Trascina file pre-vendita",
         "importing": "Importazione...",
         "buttons": {

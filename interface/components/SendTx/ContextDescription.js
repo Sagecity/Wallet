@@ -16,7 +16,7 @@ class ContextDescription extends Component {
     return EthTools.formatBalance(
       web3.utils.toBN(this.props.value || 0),
       '0,0.00[0000000000000000]',
-      'ether'
+      'sage'
     );
   }
 

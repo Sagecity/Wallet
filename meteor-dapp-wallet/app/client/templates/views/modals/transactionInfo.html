@@ -2,7 +2,7 @@
     {{#with transaction}}
         <h1>
             {{i18n "wallet.transactions.transactionInfoTitle"}}
-            {{#if $eq ($.Session.get "network") "main"}} 
+            {{#if $eq ($.Session.get "network") "main"}}
                 <a href="http://etherscan.io/tx/{{transactionHash}}" target="_blank" style="font-size: 0.4em;">{{transactionHash}}</a>
             {{else}}
                 {{#if $eq ($.Session.get "network") "rinkeby"}}
@@ -32,7 +32,7 @@
 
         <table class="dapp-zebra">
             <!-- <thead>
-                
+
             </thead> -->
             <tbody>
                 <tr>
@@ -42,10 +42,10 @@
                             {{tokenValue}}
                         {{else}}
                             {{formatTransactionBalance value exchangeRates}}
-                            {{#if $neq unit 'ether'}}
+                            {{#if $neq unit 'sage'}}
                                 <br>
                                 <small>
-                                    ({{dapp_formatBalance value "0,0.00[000000] UNIT" "ether"}})
+                                    ({{dapp_formatBalance value "0,0.00[000000] UNIT" "sage"}})
                                 </small>
                             {{/if}}
                         {{/if}}
@@ -83,7 +83,7 @@
                     <tr>
                         <td>{{i18n "wallet.transactions.block"}}</td>
                         <td>
-                           {{#if $eq ($.Session.get "network") "main"}} 
+                           {{#if $eq ($.Session.get "network") "main"}}
                             <a href="http://etherscan.io/block/{{blockHash}}" title="{{blockHash}}" target="_blank" class="dapp-shorten-text">
                                 {{blockNumber}}
                                 <br>

@@ -77,7 +77,7 @@ var getDataField = function() {
   // send tokens
   var selectedToken = TemplateVar.get('selectedToken');
 
-  if (selectedToken && selectedToken !== 'ether') {
+  if (selectedToken && selectedToken !== 'sage') {
     var mainRecipient = TemplateVar.getFrom(
       'div.dapp-address-input input.to',
       'value'
@@ -152,12 +152,12 @@ Template['views_send'].onCreated(function() {
   // Deploy contract
   if (FlowRouter.getRouteName() === 'deployContract') {
     TemplateVar.set('selectedAction', 'deploy-contract');
-    TemplateVar.set('selectedToken', 'ether');
+    TemplateVar.set('selectedToken', 'sage');
 
     // Send funds
   } else {
     TemplateVar.set('selectedAction', 'send-funds');
-    TemplateVar.set('selectedToken', FlowRouter.getParam('token') || 'ether');
+    TemplateVar.set('selectedToken', FlowRouter.getParam('token') || 'sage');
   }
 
   // check if we are still on the correct chain
@@ -184,7 +184,7 @@ Template['views_send'].onCreated(function() {
   template.autorun(function(c) {
     var unit = EthTools.getUnit();
 
-    if (!c.firstRun && TemplateVar.get('selectedToken') === 'ether') {
+    if (!c.firstRun && TemplateVar.get('selectedToken') === 'sage') {
       TemplateVar.set(
         'amount',
         EthTools.toWei(
@@ -235,7 +235,7 @@ Template['views_send'].onRendered(function() {
     }
 
     if (selectedAddress !== address) {
-      TemplateVar.set('selectedToken', 'ether');
+      TemplateVar.set('selectedToken', 'sage');
     }
 
     selectedAddress = address;
@@ -256,7 +256,7 @@ Template['views_send'].onRendered(function() {
     //     address = address.toLowerCase();
 
     // Ether tx estimation
-    if (tokenAddress === 'ether') {
+    if (tokenAddress === 'sage') {
       if (EthAccounts.findOne({ address: address }, { reactive: false })) {
         web3.eth.estimateGas(
           {
@@ -368,7 +368,7 @@ Template['views_send'].helpers({
 
     @method (total)
     */
-  total: function(ether) {
+  total: function(sage) {
     var selectedAccount = Helpers.getAccountByAddress(
       TemplateVar.getFrom('.dapp-select-account.send-from', 'value')
     );
@@ -379,7 +379,7 @@ Template['views_send'].helpers({
     var gasInWei =
       TemplateVar.getFrom('.dapp-select-gas-price', 'gasInWei') || '0';
 
-    if (TemplateVar.get('selectedToken') === 'ether') {
+    if (TemplateVar.get('selectedToken') === 'sage') {
       amount =
         selectedAccount && selectedAccount.owners
           ? amount
@@ -413,7 +413,7 @@ Template['views_send'].helpers({
     );
     var amount = 0;
 
-    if (TemplateVar.get('selectedToken') === 'ether') {
+    if (TemplateVar.get('selectedToken') === 'sage') {
       var gasInWei =
         TemplateVar.getFrom('.dapp-select-gas-price', 'gasInWei') || '0';
 
@@ -546,7 +546,7 @@ Template['views_send'].events({
     @event click .token-ether
     */
   'click .token-ether': function(e, template) {
-    TemplateVar.set('selectedToken', 'ether');
+    TemplateVar.set('selectedToken', 'sage');
 
     // trigger amount box change
     template.$('input[name="amount"]').trigger('change');
@@ -560,7 +560,7 @@ Template['views_send'].events({
     var value = e.currentTarget.value;
     TemplateVar.set('selectedToken', value);
 
-    if (value === 'ether')
+    if (value === 'sage')
       TemplateVar.setTo('.dapp-data-textarea', 'value', '');
 
     // trigger amount box change
@@ -576,7 +576,7 @@ Template['views_send'].events({
     template
   ) {
     // ether
-    if (TemplateVar.get('selectedToken') === 'ether') {
+    if (TemplateVar.get('selectedToken') === 'sage') {
       var wei = EthTools.toWei(e.currentTarget.value.replace(',', '.'));
 
       TemplateVar.set('amount', wei || '0');
@@ -624,7 +624,7 @@ Template['views_send'].events({
         estimatedGas = 22000;
 
       // if its a wallet contract and tokens, don't need to remove the gas addition on send-all, as the owner pays
-      if (sendAll && (selectedAccount.owners || tokenAddress !== 'ether'))
+      if (sendAll && (selectedAccount.owners || tokenAddress !== 'sage'))
         sendAll = false;
 
       // if is a wallet contract, normalize addresses to lowercase
@@ -644,7 +644,7 @@ Template['views_send'].events({
 
       if (
         selectedAccount.balance === '0' &&
-        (!selectedAccount.owners || tokenAddress === 'ether')
+        (!selectedAccount.owners || tokenAddress === 'sage')
       )
         return GlobalNotification.warning({
           content: 'i18n:wallet.send.error.emptyWallet',
@@ -657,7 +657,7 @@ Template['views_send'].events({
           duration: 2
         });
 
-      if (tokenAddress === 'ether') {
+      if (tokenAddress === 'sage') {
         if (
           (_.isEmpty(amount) || amount === '0' || !_.isFinite(amount)) &&
           !data

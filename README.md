@@ -77,7 +77,6 @@ Now you're ready to initialize Mist for development:
 ```bash
 $ git clone https://github.com/ethereum/mist.git
 $ cd mist
-$ git submodule update --init --recursive
 $ yarn
 ```
 

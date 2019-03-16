@@ -94,7 +94,7 @@ class TxRow extends Component {
         </div>
         <div>
           {i18n.t('mist.txHistory.etherAmount')}:{' '}
-          <span className="bold">{etherAmount} Ether</span>{' '}
+          <span className="bold">{etherAmount} Sage</span>{' '}
           {etherAmountUSD && <span> (${etherAmountUSD} USD)</span>}
         </div>
         <div>
@@ -115,13 +115,13 @@ class TxRow extends Component {
         )}
         <div>
           {i18n.t('mist.txHistory.gasPrice')}:{' '}
-          <span className="bold">{gasPriceEther} Ether</span> ({gasPriceGwei}{' '}
+          <span className="bold">{gasPriceEther} Sage</span> ({gasPriceGwei}{' '}
           Gwei)
         </div>
         {txCostEther && (
           <div>
             {i18n.t('mist.txHistory.txCost')}:{' '}
-            <span className="bold">{txCostEther} Ether</span>
+            <span className="bold">{txCostEther} Sage</span>
             {txCostUSD && <span> (${txCostUSD} USD)</span>}
           </div>
         )}
@@ -167,7 +167,7 @@ class TxRow extends Component {
       description = 'Executed  “' + executionFunctionSentence + '” function';
     } else {
       const etherAmount = this.valueToEtherAmount(tx.value);
-      description = `Sent ${etherAmount} Ether`;
+      description = `Sent ${etherAmount} Sage`;
     }
 
     let status = (
