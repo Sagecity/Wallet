@@ -1,12 +1,8 @@
 # Mist Browser<sup>beta</sup>
 
-[![Github All Releases](https://img.shields.io/github/downloads/ethereum/mist/total.svg)](http://www.somsubhra.com/github-release-stats/?username=ethereum&repository=mist)
-[![Build Status develop branch](https://travis-ci.org/ethereum/mist.svg?branch=develop)](https://travis-ci.org/ethereum/mist)
-[![Build status](https://ci.appveyor.com/api/projects/status/bcfm3v0y2ovq9xob?svg=true)](https://ci.appveyor.com/project/ethereum/mist)
-[![Join the chat at https://gitter.im/ethereum/mist](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ethereum/mist)
-[![Code Triagers Badge](https://www.codetriage.com/ethereum/mist/badges/users.svg)](https://www.codetriage.com/ethereum/mist)
+[![Code Triagers Badge](https://www.codetriage.com/sagecity/wallet/badges/users.svg)](https://www.codetriage.com/sagecity/wallet)
 
-The Mist browser is the tool of choice to browse and use Ðapps.
+The Mist browser is the tool of choice to browse and use Ðapps on the SageCity network.
 
 For the Mist API see [MISTAPI.md](MISTAPI.md).
 
@@ -14,18 +10,18 @@ This repository is also the Electron host for the [Meteor-based wallet dapp](htt
 
 ## Help and troubleshooting
 
-In order to get help regarding Mist or Ethereum Wallet:
+In order to get help regarding Mist or Sagecity Wallet:
 
 1.  Please check the [Mist troubleshooting guide](https://github.com/ethereum/mist/wiki).
-1.  Go to our [Gitter channel](https://gitter.im/ethereum/mist) to connect with the community for instant help.
-1.  Search for [similar issues](https://github.com/ethereum/mist/issues?q=is%3Aopen+is%3Aissue+label%3A%22Type%3A+Canonical%22) and potential help.
-1.  Or create a [new issue](https://github.com/ethereum/mist/issues) and provide as much information as you can to recreate your problem.
+1.  Go to our [Sagecity Telegram Channel](https://t.me/joinchat/AAAAAFOF4THkvo04HoWnsw) to connect with the community for instant help.
+1.  Search for [similar issues](https://github.com/ethereum/mist/issues?q=is%3Aopen+is%3Aissue+label%3A%22Type%3A+Canonical%22) and potential help in other mist clients.
+1.  Or create a [new issue](https://github.com/Sagecity/Wallet/issues) in the Sagecity wallet repository and provide as much information as you can to recreate your problem.
 
 ## How to contribute
 
-Contributions via Pull Requests are welcome. You can see where to help looking for issues with the [Enhancement](https://github.com/ethereum/mist/issues?q=is%3Aopen+is%3Aissue+label%3A%22Type%3A+Enhancement%22) or [Bug](https://github.com/ethereum/mist/issues?q=is%3Aopen+is%3Aissue+label%3A%22Type%3A+Bug%22) labels. We can help guide you towards the solution.
+Contributions via Pull Requests are welcome. You can see where to help looking for issues with the [Enhancement](https://github.com/Sagecity/Wallet/issues?q=is%3Aopen+is%3Aissue+label%3A%22Type%3A+Enhancement%22) or [Bug](https://github.com/Sagecity/Wallet/issues?q=is%3Aopen+is%3Aissue+label%3A%22Type%3A+Bug%22) labels. We can help guide you towards the solution.
 
-You can also help by [responding to issues](https://github.com/ethereum/mist/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Triage%22). Sign up on [CodeTriage](https://www.codetriage.com/ethereum/mist) and it'll send you gentle notifications with a configurable frequency. It is a nice way to help while learning.
+You can also help by [responding to issues](https://github.com/Sagecity/Wallet/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Triage%22). Sign up on [CodeTriage](https://www.codetriage.com/sagecity/wallet) and it'll send you gentle notifications with a configurable frequency. It is a nice way to help while learning.
 
 ## Installation
 
